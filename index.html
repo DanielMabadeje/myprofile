@@ -24,15 +24,19 @@
     <link rel="stylesheet" href="assets/css/morphext.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-	
-	<!-- [if lt IE 9]> -->
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<!-- <![endif] -->
-	
-	<!-- Favicon -->
-	<!-- <link rel="shortcut icon" href="#"> -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+			div canvas {
+				top:0 !important;
+				position: absolute !important;
+			}
+			.slide{
+				z-index: 15 !important;
+			}
+			.centrize{
+				z-index: 23 !important;
+			}
+	</style>
 	
 </head>
 
@@ -62,14 +66,16 @@
 		</header>
 		<!-- Container -->
 		<div class="">
-			<div class="ero__background section started" style="height: 657px;">
-<div class="slide" style="background-image: linear-gradient(rgba(8, 2, 2, 0.8),rgba(8, 2, 2, 0.8)), url(assets/img/me1.jpg);" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" id="picThree"></div>
-<div class="slide" style="background-image: linear-gradient(rgba(8, 2, 2, 0.8),rgba(8, 2, 2, 0.8)), url(assets/img/me2.jpg);" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" id="picTwo"></div>
-<div class="slide" style="background-image: linear-gradient(rgba(8, 2, 2, 0.8),rgba(8, 2, 2, 0.8)), url(assets/img/me.jpeg);" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" id="picOne"></div>
+			<!-- <div id="containpart"></div> -->
+			<div class="ero__background section started" id="containpart" style="height: 657px;">
+				<!-- <div id="containpart"></div> -->
+<div class="slide "  style="background-image: linear-gradient(rgba(8, 2, 2, 0.8),rgba(8, 2, 2, 0.8)), url(assets/img/me1.jpg);" style="position: absolute !important; top: 0px; left: 0px; width: 100%; height: 100%;" id="picThree"></div>
+<div class="slide "  style="background-image: linear-gradient(rgba(8, 2, 2, 0.8),rgba(8, 2, 2, 0.8)), url(assets/img/me2.jpg);" style="position: absolute !important; top: 0px; left: 0px; width: 100%; height: 100%;" id="picTwo"></div>
+<div class="slide "  style="background-image: linear-gradient(rgba(8, 2, 2, 0.8),rgba(8, 2, 2, 0.8)), url(assets/img/me.jpeg);" style="position: absolute !important; top: 0px; left: 0px; width: 100%; height: 100%;" id="picOne"></div>
 <!-- <div class="slide"  style="background-image: linear-gradient(rgba(8, 2, 2, 0.8),rgba(8, 2, 2, 0.8));" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"> -->
 				<div class="centrize full-width">
 					<div class="vertical-center">
-						<div class="st-title align-center">
+						<div class="st-title align-center" >
 							<div class="typing-title" style="display: none;">
 								<p>Developer</p>
                                 <p>Coder</p>
@@ -460,6 +466,7 @@
 	  
 
 	<!-- jQuery & JS Scripts -->
+	<script src='https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js'></script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.validate.js"></script>
 	<script src="assets/js/masonry.pkgd.js"></script>
@@ -473,6 +480,16 @@
 	
 	<!-- Main Scripts -->
 	<script src="assets/js/main.js"></script>
+	<script>
+var canvasDiv = document.getElementById('containpart');
+var options = {
+  particleColor: '#fff',
+  interactive: true,
+  speed: 'high',
+  density: 'high'
+};
+var particleCanvas = new ParticleNetwork(canvasDiv, options);
+	</script>
 	
 
 </body></html>
