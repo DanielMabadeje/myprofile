@@ -276,7 +276,7 @@
 /* 3. Started */
 .section.started {
 	padding: 0;
-	background: #292929;
+	/* background: #292929; */
 }
 
 .section.started .slide {
@@ -296,7 +296,7 @@
 	margin: 30px 50px 15px 50px;
 	font-size: 100px;
 	line-height: 100px;
-	color: #ffffff;
+	/* color: #ffffff; */
 	font-weight: 600;
 	letter-spacing: -0.045em;
 	transition: all 0.4s ease 0s;
