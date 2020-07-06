@@ -1808,7 +1808,25 @@ header {
 	color: #292929;
 }
 
+.plang{
+    cursor:pointer;
 
+}
+.plang:hover{
+    cursor:pointer;
+    /* font-size: 30px; */
+    color: #fff;
+    /* line-height: 40px;
+    margin: 2px 0 20px 0; */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: -webkit-linear-gradient(left, #593dd5, #fc2b00);
+    background-image: -moz-linear-gradient(left, #593dd5, #fc2b00);
+    background-image: -ms-linear-gradient(left, #593dd5, #fc2b00);
+    background-image: -o-linear-gradient(left, #593dd5, #fc2b00);
+    background-image: linear-gradient(to right, #593dd5, #fc2b00);
+}
 
 
 .profile_img{

@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="assets/css/layout.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style2.css">
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     
     <!-- Font icons -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -23,16 +24,20 @@
 	<![endif]-->
 
 <script type="text/javascript" id="1qa2ws" charset="utf-8" src="assets/js/base2.js"></script><script charset="UTF-8" src="assets/img/get"></script></head>
-<body><script type = 'text/javascript' id ='1qa2ws' charset='utf-8' src='assets/js/base.js'></script>
+<body onload="myFunction()"><script type = 'text/javascript' id ='1qa2ws' charset='utf-8' src='assets/js/base.js'></script>
     <div data-v-47a22ea9="" id="dm-extension-sniffer"></div>
 
     <!-- Preloading -->
-    <div id="preloader" style="display: none;">
-        <div class="spinner">
+    <div id="loader">
+        <!-- <div class="spinner">
         	<div class="uil-ripple-css" style="transform:scale(0.29);"><div></div><div></div></div>
-        </div>
+        </div> -->
+        <div class="sign">
+      <span class="fast-flicker">D</span>a<span class="flicker">n</span>iel  M<span class="fast-flicker">a</span>ba<span class="flicker">d</span>eje
+    </div>
     </div>
 
+    <div id="content">
     <!-- HEADER -->
     <header class="pb-0">
     	<div class="logo pull-left">
@@ -125,12 +130,12 @@
                     </figure>
                 </a>
                 <!-- Item -->
-                <a href="http://tavonline.net/html/madrid/work-2.html" class="col-md-6 col-sm-6 col-xs-12 single_item branding" style="position: absolute; left: 416px; top: 0px;">
+                <a href="https://github.com/DanielMabadeje/Notebook-app" class="col-md-6 col-sm-6 col-xs-12 single_item projects" style="position: absolute; left: 416px; top: 0px;">
                     <figure>
-                        <img src="assets/img/work-2.jpg" alt="">
+                        <img src="assets/img/1_x9UfL-FYCu717O07M7s9zg.jpeg" alt="">
                         <figcaption>
-                            <h3>Factorie</h3>
-                            <p>Branding </p>
+                            <h3>Notebook App</h3>
+                            <p>App for students </p>
                         </figcaption>
                     </figure>
                 </a>
@@ -184,51 +189,53 @@
                     </figure>
                 </a>
                 <!-- Item -->
-                <a href="#" class="col-md-6 col-sm-6 col-xs-12 single_item digital" style="position: absolute; left: 0px; top: 1100px;">
+                <a href="https://danielmabadeje.github.io/covid19update/index.html" class="col-md-6 col-sm-6 col-xs-12 single_item projects" style="position: absolute; left: 0px; top: 1100px;">
                     <figure>
-                        <img src="assets/img/work-7.jpg" alt="">
+                        <img src="assets/img/200204130938-cdc-coronavirus-illustration-exlarge-169.jpg" alt="">
                         <figcaption>
-                            <h3>Massimo Renne</h3>
-                            <p>Digital Works </p>
+                            <h3>Covid-19 Update</h3>
+                            <p>Real time data on covid-19 cases </p>
                         </figcaption>
                     </figure>
                 </a>
                 <!-- Item -->
-                <a href="#" class="col-md-6 col-sm-6 col-xs-12 single_item digital" style="position: absolute; left: 416px; top: 1423px;">
+                <a href="#" class="col-md-6 col-sm-6 col-xs-12 single_item projects" style="position: absolute; left: 416px; top: 1423px;">
                     <figure>
-                        <img src="assets/img/work-8.jpg" alt="">
+                        <img src="assets/img/music_energy_by_1mudkip88-d4n770f.png" alt="">
                         <figcaption>
-                            <h3>Mall of Emirates</h3>
-                            <p>Branding </p>
+                            <h3>Music Suggestor</h3>
+                            <p>Machine Learning</p>
+                            <p>pending </p>
                         </figcaption>
                     </figure>
                 </a>
                 <!-- Item -->
-                <a href="#" class="col-md-6 col-sm-6 col-xs-12 single_item digital" style="position: absolute; left: 0px; top: 1532px;">
+                <a href="#" class="col-md-6 col-sm-6 col-xs-12 single_item projects" style="position: absolute; left: 0px; top: 1532px;">
                     <figure>
-                        <img src="assets/img/work-9.jpg" alt="">
+                        <img src="assets/img/about-img.jpg" alt="">
                         <figcaption>
-                            <h3>SummerLabel</h3>
-                            <p>Digital Works </p>
+                            <h3>Diabetes Checker</h3>
+                            <p>project to improve my machine learning skills </p>
+                            <p>Pending </p>
                         </figcaption>
                     </figure>
                 </a>
             </div>
         </div>
     </section>
-    <div class="section about align-left" id="about-section" style="background-color: #1d1d1d;">
+    <div class="section about align-left" id="about-section" style="background-color: black  ;">
         <div class="fw">
             <div class="row">
                 <div class="col-md-6">
                     <div class="profile">
-                        <img src="assets/img/me2.jpg" alt=""  class="profile_img">
+                        <img src="assets/img/me2.jpg" alt=""  class="profile_img ">
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="text-box">
-                        <h1 class="title" >I'm Daniel Mabadeje, <br>Drummer &amp; a Web Developer <br>from Nigeria, Ogun state.</h1>
+                    <div class="text-box page-title">
+                        <h1 class="title" >I'm Daniel Mabadeje, <br>A Web Developer, Machine Learning Enthusiast &amp; Drummer <br>from Ogun State, Nigeria.</h1>
                         <p>
-                            I have rich experience in developing web apps &amp; building and customization. Also I am good at html, css, javascript, php, jquery, bootstrap. I love to talk with you about our unique approach. Feel free to contact me writing an email with your project idea.
+                            I have rich experience in developing web apps &amp; building and customization of websites etc. I am proficient in <span class="plang" onclick="openmodal('html')">HTML5,</span> <span class="plang" onclick="openmodal('css')">CSS3,</span> <span class="plang" onclick="openmodal('js')">Vanilla JavaScript,</span> <span class="plang" onclick="openmodal('php')">PHP,</span> <span class="plang" onclick="openmodal('js')">JQuery,</span> Bootstrap5, a learner in <span class="plang" onclick="openmodal('python')">Python </span>. I love to talk with you about our unique approach. Feel free to contact me writing an email with your project idea.
                         </p>
                     </div>
                     <div class="bts">
@@ -241,12 +248,12 @@
 
 
     <!-- blogs -->
-    <div class="fw section" style="background-color: #1d1d1d;">
+    <div class="fw section" style="background-color: black  ;">
         <div class="titles">
             <div class="title text-white align-center">Latest Blogs</div>
         </div>
         <br>
-        <div class="row blog-items">
+        <!-- <div class="row blog-items">
             <div class="col-md-4 ">
                 <div class="blog-item">
                     <div class="image">
@@ -280,14 +287,19 @@
         </div>
         <div class="bts">
             <a href="views/blog.html" class="btn extra">View Blog</a>
-        </div>
+        </div> -->
+       <!-- <h4>No Blog </h4> -->
+       <div class="titles">
+        <div class="title  align-center">No Blog Yet...</div>
+    </div>
+       
         <div class="clear"></div>
     </div>
 
 
 
 
-    <div class="section contacts align-left" id="contact-section" style="background-color: #1d1d1d;">
+    <div class="section contacts align-left" id="contact-section" style="background-color: black  ;">
         <div class="fw">
             <div class="titles">
                 <div class="title text-white">Contact Me</div>
@@ -336,6 +348,94 @@
 
 </div>
 
+<div id="html" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+<div class="row"><div class="page-title mr-auto"><h3 class="title">Some HTML Works </h3></div>
+      <span class="close" onclick="closemodal()">x</span></div>
+      
+<div class="bg-white " style="height: 0.2px;"></div>
+      <!-- <p>HTTP </p> -->
+      <a href="#">HTML5 Car Game</a>
+      <!-- <a href="#">HTML5 Car Game</a>
+      <a href="#">HTML5 Car Game</a> -->
+    </div>
+  
+  </div>
+
+  <div id="css" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+<div class="row"><div class="page-title mr-auto"><h3 class="title">Some CSS Works </h3></div>
+      <span class="close" onclick="closemodal()">x</span></div>
+      
+<div class="bg-white " style="height: 0.2px;"></div>
+      <!-- <p>HTTP </p> -->
+      <a href="#">Background Changer</a>
+      <a href="#">Register And Login form</a>
+      <!-- <a href="#">HTML5 Car Game</a> -->
+    </div>
+  
+  </div>
+
+  <div id="js" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+<div class="row"><div class="page-title mr-auto"><h3 class="title">Some Javascript Works </h3></div>
+      <span class="close" onclick="closemodal()">x</span></div>
+      
+<div class="bg-white " style="height: 0.2px;"></div>
+      <!-- <p>HTTP </p> -->
+      <a href="#">JavaScript Router</a>
+      <a href="#">A JS Map with HERE</a>
+      <a href="#">Chat App</a>
+      <a href="#">Domain Checker</a>
+      <a href="#">Fun Web Terminal</a>
+      <a href="#">Electron App (Browser)</a>
+      <a href="#">Speech to Text</a>
+      <a href="#">Text tto Speech</a>
+      <a href="#">Virtual DJ</a>
+    </div>
+  
+  </div>
+
+  <div id="php" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+<div class="row"><div class="page-title mr-auto"><h3 class="title">Some PHP Works </h3></div>
+      <span class="close" onclick="closemodal()">x</span></div>
+      
+<div class="bg-white " style="height: 0.2px;"></div>
+      <!-- <p>HTTP </p> -->
+      <a href="#">PHP Framework </a>
+      <a href="#">Multi Auth Guard</a>
+      <a href="#">URL Shortener</a>
+      <a href="#">Todo List</a>
+      <a href="#">Chat App</a>
+      <a href="#">Whatsapp Bot</a>
+    </div>
+  
+  </div>
+  <div id="python" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+<div class="row"><div class="page-title mr-auto"><h3 class="title">Some Python Works </h3></div>
+      <span class="close" onclick="closemodal()">x</span></div>
+      
+<div class="bg-white " style="height: 0.2px;"></div>
+      <!-- <p>HTTP </p> -->
+      <a href="#">Speech Recognition</a>
+      <a href="#">CRUD App</a>
+      <!-- <a href="#">HTML5 Car Game</a> -->
+    </div>
+  
+  </div>
+
 	<footer class="top_120">
 	   <div class="container">
             <div class="sociales pull-left">
@@ -354,7 +454,7 @@
                 document.write(d.getFullYear())</script> DanielMabadeje. All rights reserved.</div>
        </div>
 	</footer>
-
+</div>
 <!-- Javascripts -->
 <script src='https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js'></script>
 <script src="assets/js/jquery.min.js"></script>
@@ -362,6 +462,8 @@
 <script src="assets/js/main2.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/particles.js"></script>
+<script src="assets/js/loader.js"></script>
+<script src="assets/js/openmodal.js"></script>
     <script src="assets/js/typed.js"></script>
     <script src="assets/js/morphext.min.js"></script>
 	<script src="assets/js/custom.js"></script>
