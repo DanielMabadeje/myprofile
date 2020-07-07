@@ -2,7 +2,7 @@ var myVar;
 // effect1();
 // effect2();
 function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+    myVar = setTimeout(showPage, 7000);
 }
 
 function showPage() {
