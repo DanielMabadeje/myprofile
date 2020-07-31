@@ -22,7 +22,7 @@ blogs.forEach((blogpost) => {
             <div class="blog-info">Posted <span>7 September 2016</span> by Jason Gordon</div>
         </div>
     </div>
-    <img class="blog-preview" src="./Madrid Portfolio Template_files/blog-1.jpg" alt="">
+    <img class="blog-preview" src="${blogpost.file}" alt="">
 </a>
 <div class="line col-md-4 col-md-offset-4 mx-auto"></div>`
 }); 
