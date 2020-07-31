@@ -1,12 +1,33 @@
 var blog = {};
-
+const api_url='http://localhost/myprofilebackend/api/posts';
 blog.fetchblog = function () {
     $.ajax({
-        url: 'api.myprofile.com/api/blogs/all',
+        url: api_url,
         type:'get',
-        data: {method: 'fetch'},
+        // data: {method: 'fetch'},
         success: function(data) {
-            $('.blog-item .blog').html(data);
+            // console.log(data);
+            // $('.blog-item .blog').html(data);
+            // data.posts.
+var blogs =data.message.posts;
+console.log(blogs);
+var html=``
+
+blogs.forEach((blogpost) => {
+    html +=`<a href="#" class="post md-opjjpmhoiojifppkkcdabiobhakljdgm_doc">
+    <div class="container ">
+        <div class="col-md-8 col-md-offset-2 post-inner mx-auto">
+            <h2 class="post-title">${blogpost.title}</h2>
+            <p>${blogpost.body}</p>
+            <div class="blog-info">Posted <span>7 September 2016</span> by Jason Gordon</div>
+        </div>
+    </div>
+    <img class="blog-preview" src="./Madrid Portfolio Template_files/blog-1.jpg" alt="">
+</a>
+<div class="line col-md-4 col-md-offset-4 mx-auto"></div>`
+}); 
+         
+            document.getElementById('allblogs').innerHTML=html;
         }
     });
 };
@@ -26,6 +47,6 @@ blog.fetchblog = function () {
 //     }
 // };
 
-blog.interval = setInterval(chat.fetchmessage, 8000);
+// blog.interval = setInterval(chat.fetchmessage, 8000);
 blog.fetchblog();
 
