@@ -133,7 +133,7 @@ a:focus{
 }
 
 .hero{
-    background: linear-gradient(to right, black , rgba(24, 23, 23, 0.89), black),url('../img/WhatsApp Image 2020-07-24 at 12.53.38.jpeg') center center;
+    background: linear-gradient(to right, black , rgba(24, 23, 23, 0.651), black),url('../img/WhatsApp Image 2020-07-24 at 12.53.38.jpeg') center center;
     background-size: cover;
     display: table;
     width: 100%;
