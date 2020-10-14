@@ -146,7 +146,7 @@ a:focus{
 /*About Page*/
 
 .hero.about{
-    background: url(../img/about-promo.jpg) center center;
+    background: linear-gradient(to right, black , rgba(0, 0, 0, 0.89), black), url(../img/about-promo.jpg) center center;
     background-size: cover;
     display: table;
     width: 100%;
