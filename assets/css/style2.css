@@ -194,7 +194,18 @@ a:focus{
 }
 
 .hero.contact{
-    background: url(../img/contact.jpg) center center;
+
+    background: url('../img/traf-ukTd6UiQbLQ-unsplash.jpg') center center;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 100%;
+}
+.hero.blog{
+    
+    background: url('../img/FsJ4AwKi_o.jpg') center center;
     background-size: cover;
     display: table;
     width: 100%;
