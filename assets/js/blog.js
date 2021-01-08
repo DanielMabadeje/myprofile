@@ -19,7 +19,7 @@ blogs.forEach((blogpost) => {
         <div class="col-md-8 col-md-offset-2 post-inner mx-auto">
             <h2 class="post-title">${blogpost.title}</h2>
             <p>${blogpost.body}</p>
-            <div class="blog-info">Posted <span>7 September 2016</span> by Jason Gordon</div>
+            <div class="blog-info">Posted <span>${blogpost.created_at}</span> by Daniel Mabadeje</div>
         </div>
     </div>
     <img class="blog-preview" src="${blogpost.file}" alt="">
