@@ -134,7 +134,8 @@ a:focus{
 
 .hero{
     /* background: linear-gradient(to right, black , rgba(24, 23, 23, 0.651), black),url('../img/WhatsApp Image 2020-07-24 at 12.53.38.jpeg') center center; */
-    background: linear-gradient(to right, black , rgba(24, 23, 23, 0.651), black),url('../img/WhatsApp Image 2020-10-16 at 02.42.23.jpeg') center center;
+    /* background: linear-gradient(to right, black , rgba(24, 23, 23, 0.651), black),url('../img/WhatsApp Image 2020-10-16 at 02.42.23.jpeg') center center; */
+    background: rgb(12, 11, 11);
     /* WhatsApp Image 2020-10-16 at 02.42.23 */
     background-size: cover;
     display: table;
@@ -1834,8 +1835,9 @@ header {
 
 
 .profile_img{
-    height: 590px;
-    width: fit-content;
+    /* height: 590px; */
+    /* width: fit-content; */
+    width: 450px;
 }
 
 

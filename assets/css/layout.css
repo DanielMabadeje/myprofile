@@ -293,8 +293,8 @@
 .section.started .st-title,
 .section.started .typed-title {
 	position: relative;
-	margin: 30px 50px 15px 50px;
-	font-size: 70px;
+	/* margin: 30px 50px 15px 50px; */
+	font-size: 100px;
 	line-height: 100px;
 	/* color: #ffffff; */
 	font-weight: 600;
