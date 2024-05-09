@@ -1,0 +1,117 @@
+<template>
+    <main>
+        <div class="container m-auto pt-20 p-5 md:w-9/12">
+            <div class="py-5">
+                <h2 class="text-3xl font-bold dark:text-white py-3">Speaking</h2>
+                <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">These are all the speaking
+                    engagements I've had in the past, or plan to have in the future. Where available, follow the links
+                    to see the video recordings. If you want me to speak at your event, please contact me on <a href="https://twitter.com/mabadejedanphp">Twitter</a>.
+                </p>
+            </div>
+
+            <ol class="relative border-s border-gray-200 dark:border-gray-700">
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">23 November
+                        2023</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Ubuntu Africa - Acknowledgement and Benefits Of Open Source
+                    </h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages
+                        including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &
+                        Marketing pages.</p>
+                    <a href="https://www.youtube.com/watch?app=desktop&v=NNBHvOidGDw"
+                        class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Watch Video
+                         <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></a>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">11 November
+                        2023</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Google Developers Festival Eket - The Power Of Community
+                    </h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages
+                        including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce &
+                        Marketing pages.</p>
+                    <a href="https://x.com/GdgIkotEkpene/status/1723368645391180121"
+                        class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn
+                        more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg></a>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">29 October
+                        2023</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PHPTALKS - Data Structures And Algorithm: Sorting</h3>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components
+                        are first designed in Figma and we keep a parity between the two versions even as we update the
+                        project.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">02 September
+                        2023</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PHPCONNECT'23: Why PHP?</h3>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components
+                        are first designed in Figma and we keep a parity between the two versions even as we update the
+                        project.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">22 June
+                        2023</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Figma Config Watch Party Uyo - Responsive Web Design And Mobile Optimization</h3>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components
+                        are first designed in Figma and we keep a parity between the two versions even as we update the
+                        project.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">16th October
+                        2022</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PHPTALKS - Abstraction in PHP
+                    </h3>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
+                        components and interactive elements built on top of Tailwind CSS.</p>
+                </li>
+
+                <li class="ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">16th October
+                        2022</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PHPTALKS - Introduction To Object Oriented Programming (Inheritance)
+                    </h3>
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web
+                        components and interactive elements built on top of Tailwind CSS.</p>
+                </li>
+            </ol>
+
+
+        </div>
+    </main>
+
+
+
+
+
+</template>
