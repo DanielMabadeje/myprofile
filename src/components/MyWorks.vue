@@ -156,6 +156,15 @@ export default {
 
                 {
                     cat:        'cat2',
+                    link:       'http://hazontech.com/',
+                    img_link:   'https://media.licdn.com/dms/image/C4E0BAQGlghPaH_m90g/company-logo_200_200/0/1631019518018/hazon_technologies_logo?e=1723680000&v=beta&t=bNKFMyPdclz3Q5ssfQdD6EhfGy5DQGEOKAMr4Ri4RNE',
+                    heading:    'Hazon Technologies',
+                    shortDesc:  'Hazon Technologies is renowned as a front-runner in technology innovations that are rapidly changing lifestyle and business culture in Africa through its range of cutting-edge solutions deployed across different countries.',
+                    actionBtn:  'See Details'
+                },
+
+                {
+                    cat:        'cat2',
                     link:       'https://gbefunwa.com/',
                     img_link:   'https://media.licdn.com/dms/image/C4D1BAQGyL6f7iVZzZQ/company-background_10000/0/1632165354685/gbefunwa_cover?e=2147483647&v=beta&t=4vkKhBUbler-FKKNa4AtkPFnckIJoiDAer3Z6T7-88c',
                     heading:    'Gbefunwa',
