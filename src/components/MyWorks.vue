@@ -1,11 +1,11 @@
 <template>
-    <div class="container m-auto">
+    <div class="container m-auto px-5 md:px-0">
         <div class="heading md:py-9">
             <!-- <h2>My Works</h2> -->
             <h4 class="text-2xl text-gray-500 font-bold dark:text-white">My Portfolio At A Glance</h4>
         </div>
         <div class="md:flex">
-            <div class="menu md:w-4/12 p-3">
+            <div class="menu md:w-4/12 p-3 pr-0 md:pr-3 mx-auto ">
                 <p class="pb-9">I'm A Full stack developer who can design and develop an end-to-end application
                     independently and also collaboratively by handling all the work of coding, databases, servers and
                     platforms
@@ -21,10 +21,10 @@
 
 
             <div class="md:8/12">
-                <div class="grid grid-cols-2 md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div v-for="preview in filteredPreviews" :key="preview"
                         :class="'preview ' + preview.cat"
-                        class="max-w-sm bg-white  border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
+                        class="max-w-sm bg-white mx-auto  border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
                         <a :href="preview.link">
                             <img class="rounded-t-lg" :src="preview.img_link" alt="" />
                         </a>
