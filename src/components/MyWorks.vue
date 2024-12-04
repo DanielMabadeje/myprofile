@@ -157,7 +157,7 @@ export default {
                 {
                     cat:        'cat2',
                     link:       'http://hazontech.com/',
-                    img_link:   'https://media.licdn.com/dms/image/C4E0BAQGlghPaH_m90g/company-logo_200_200/0/1631019518018/hazon_technologies_logo?e=1723680000&v=beta&t=bNKFMyPdclz3Q5ssfQdD6EhfGy5DQGEOKAMr4Ri4RNE',
+                    img_link:   'https://hazonholdings.com/wp-content/uploads/2024/01/HAZON-HOLDINGS.png',
                     heading:    'Hazon Technologies',
                     shortDesc:  'Hazon Technologies is renowned as a front-runner in technology innovations that are rapidly changing lifestyle and business culture in Africa through its range of cutting-edge solutions deployed across different countries.',
                     actionBtn:  'See Details'
