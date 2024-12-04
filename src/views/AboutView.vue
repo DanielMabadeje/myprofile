@@ -59,12 +59,12 @@ import MyWorks from '../components/MyWorks.vue'
           </div>
           <div>
             <img class="h-auto max-w-full rounded-lg"
-              src="https://media.licdn.com/dms/image/D4D22AQHs_FCfTQsPxA/feedshare-shrink_2048_1536/0/1701332394732?e=2147483647&v=beta&t=-AFlEDbn-6M0NFrBKoH4bpcOyMr-tBKAJdVMWB1Lw2I"
+              src="https://instagram.flos5-3.fna.fbcdn.net/v/t51.29350-15/463136320_1261397385279824_8350760975730724955_n.webp?stp=dst-jpg_e35_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyLmYyOTM1MC5kZWZhdWx0X2ltYWdlIn0&_nc_ht=instagram.flos5-3.fna.fbcdn.net&_nc_cat=108&_nc_ohc=1Coenf_VH3cQ7kNvgHoF-ou&_nc_gid=3b16788657da453abfc8a79e72a37517&edm=AP4sbd4BAAAA&ccb=7-5&ig_cache_key=MzQ3NzQzOTUzMzI3OTE5MDk5MA%3D%3D.3-ccb7-5&oh=00_AYBWdSKHftT_U1OFYx5piiof39Rfu4GTc0HsKqvQa97vCg&oe=6756B9B2&_nc_sid=7a9f4b"
               alt="">
           </div>
           <div>
             <img class="h-auto max-w-full rounded-lg"
-              src="https://pbs.twimg.com/media/F5COV24XYAAqQml?format=jpg&name=medium" alt="">
+              src="https://scontent.flos5-2.fna.fbcdn.net/v/t39.30808-6/462996660_1997090540737894_4106037861948768808_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHxTASeTO5uVOt9kH04Wju5N9O0BsvFksw307QGy8WSzEQ6pnWpsnSPaR6CKNNRD5dD-mNnK8LKaNmuc1AI1WMY&_nc_ohc=MTj8x8dLuOYQ7kNvgGZ9-c4&_nc_zt=23&_nc_ht=scontent.flos5-2.fna&_nc_gid=ApEFfL-IojGPU3-f2FZdykk&oh=00_AYBTMJJdm5KrJZk8HE0mgPKzda0QTCNZpl3OhKl-B-U6JQ&oe=6756A1E0" alt="">
           </div>
         </div>
         <div class="grid gap-4">
