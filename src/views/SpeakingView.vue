@@ -14,6 +14,28 @@
                     <div
                         class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                     </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">12 October
+                        2024</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">GDGon Campus (Tech Ignite) - Best Practices in Software Engineering
+                    </h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">In this physical event organised by Google Developers Group On Campus Uniuyo Chapter, I spoke about the various best practices in software engineering. I gave some with the context of fronted enginerring and how auditing is great to measure performance, and also best practices in backend as well</p>
+                    
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
+                    <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">20 June
+                        2024</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">ACES Integrate - Finding your way in tech (Breaking in)
+                    </h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">In this physical event organised by the Vice President of the Association Of Computer Engineering Students - Uniuyo Chapter, I was privileged to share my experience on how I was able to improve my skills as usual, and also talk about various ways to hasten your break-in in tech </p>
+                    
+                </li>
+                <li class="mb-10 ms-4">
+                    <div
+                        class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                    </div>
                     <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">13 December
                         2023</time>
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">ACES Tech N Campus - Striking the Balance with School and Career
@@ -73,7 +95,7 @@
                     <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">02 September
                         2023</time>
                     <h3 class="text-lg font-semibold text-gray-900 dark:text-white">PHPCONNECT'23: Why PHP?</h3>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">AIn the maiden edition of PHP Connect, I spoke on why developers should use PHP (because its the best😊)!!
+                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">In the maiden edition of PHP Connect, I spoke on why developers should use PHP (because its the best😊)!!
                         I spoke on the massive improvements PHP has had and its dominance in the World wide web
                     </p>
                 </li>
