@@ -12,7 +12,7 @@ onMounted(() => {
   <section class="hero page-section fade-in">
     <div class="hero-eyebrow">
       <span class="eyebrow-line"></span>
-      Based in Lagos, Nigeria
+      Based in Nigeria
     </div>
 
     <h1>

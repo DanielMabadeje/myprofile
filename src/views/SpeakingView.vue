@@ -7,11 +7,12 @@ useFadeIn()
 
 <template>
   <section class="page-section fade-in speaking-section">
-    <SectionHeader
-      label="Speaking"
-      title="On stage &amp; online."
-      desc='Events I\'ve spoken at. Want me at yours? <a href="https://twitter.com/mabadejedanphp" target="_blank" rel="noopener">Reach out on X →</a>'
-    />
+    <SectionHeader label="Speaking" title="On stage &amp; online.">
+      <template #desc>
+        Events I've spoken at. Want me at yours?
+        <a href="https://twitter.com/mabadejedanphp" target="_blank" rel="noopener">Reach out on X →</a>
+      </template>
+    </SectionHeader>
 
     <ol class="timeline">
       <li v-for="event in speakingEvents" :key="event.title" class="tl-item">

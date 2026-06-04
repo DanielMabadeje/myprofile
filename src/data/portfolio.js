@@ -79,14 +79,14 @@ export const packages = [
     tags: ['PHP 8', 'Blockchain', 'Packagist'],
     status: 'published',
   },
-  {
-    icon: '🖥',
-    name: 'Fermata — Virtual Studio',
-    desc: 'Desktop virtual recording studio built with NativePHP (Electron) + Laravel 12 + LiveKit + Livewire 4. WebRTC audio/video, screen sharing, chat, and DAW routing.',
-    link: 'https://github.com/DanielMabadeje',
-    tags: ['NativePHP', 'LiveKit', 'WebRTC'],
-    status: 'wip',
-  },
+  // {
+  //   icon: '🖥',
+  //   name: 'Fermata — Virtual Studio',
+  //   desc: 'Desktop virtual recording studio built with NativePHP (Electron) + Laravel 12 + LiveKit + Livewire 4. WebRTC audio/video, screen sharing, chat, and DAW routing.',
+  //   link: 'https://github.com/DanielMabadeje',
+  //   tags: ['NativePHP', 'LiveKit', 'WebRTC'],
+  //   status: 'wip',
+  // },
   {
     icon: '🏗',
     name: 'MVC Framework',
@@ -95,14 +95,14 @@ export const packages = [
     tags: ['PHP', 'MVC', 'GitHub'],
     status: 'published',
   },
-  {
-    icon: '🔌',
-    name: 'Rimplenet Plugin',
-    desc: 'A WordPress/PHP plugin for the Rimplenet ecosystem, extending functionality for community and business workflows.',
-    link: 'https://github.com/DanielMabadeje',
-    tags: ['WordPress', 'PHP', 'Plugin'],
-    status: 'wip',
-  },
+  // {
+  //   icon: '🔌',
+  //   name: 'Rimplenet Plugin',
+  //   desc: 'A WordPress/PHP plugin for the Rimplenet ecosystem, extending functionality for community and business workflows.',
+  //   link: 'https://github.com/DanielMabadeje',
+  //   tags: ['WordPress', 'PHP', 'Plugin'],
+  //   status: 'wip',
+  // },
 ]
 
 export const speakingEvents = [

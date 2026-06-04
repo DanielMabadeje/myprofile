@@ -9,11 +9,12 @@ useFadeIn()
 
 <template>
   <section class="page-section fade-in blog-section">
-    <SectionHeader
-      label="Writing"
-      title="From the blog."
-      desc='Thoughts on PHP, software architecture, open source, and building things. Read everything on <a href="https://medium.com/@mabadejedaniel1" target="_blank" rel="noopener">Medium →</a>'
-    />
+    <SectionHeader label="Writing" title="From the blog.">
+      <template #desc>
+        Thoughts on PHP, software architecture, open source, and building things. Read everything on
+        <a href="https://medium.com/@mabadejedaniel1" target="_blank" rel="noopener">Medium →</a>
+      </template>
+    </SectionHeader>
 
     <!-- Loading skeleton -->
     <div v-if="loading" class="blog-grid">

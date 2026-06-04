@@ -7,11 +7,12 @@ useFadeIn()
 
 <template>
   <section class="page-section fade-in packages-section">
-    <!-- <SectionHeader
-      :label="Open Source"
-      :title="Packages I've built."
-      :desc='Libraries and tools I\'ve published to Packagist and GitHub — built out of need, curiosity, and a desire to push PHP further.'
-    /> -->
+    <SectionHeader label="Open Source" title="Packages and Projects I've built.">
+      <template #desc>
+        Libraries and tools I've published to Packagist and GitHub — built out of need, curiosity,
+        and a desire to push PHP further.
+      </template>
+    </SectionHeader>
 
     <div class="packages-grid">
       <a
