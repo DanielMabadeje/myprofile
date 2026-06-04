@@ -1,234 +1,189 @@
+<script setup>
+import { ref, computed, onMounted } from 'vue'
+import { works, catLabels } from '@/data/portfolio'
+
+const filters = [
+  { key: 'all',      label: 'All' },
+  { key: 'team',     label: 'With Teams' },
+  { key: 'freelance',label: 'Freelance' },
+  { key: 'personal', label: 'Personal / OSS' },
+]
+
+const activeFilter = ref('all')
+
+const shuffled = ref([...works].sort(() => Math.random() - 0.5))
+
+const filtered = computed(() =>
+  activeFilter.value === 'all'
+    ? shuffled.value
+    : shuffled.value.filter((w) => w.cat === activeFilter.value)
+)
+</script>
+
 <template>
-    <div class="container m-auto px-5 md:px-0">
-        <div class="heading md:py-9">
-            <!-- <h2>My Works</h2> -->
-            <h4 class="text-2xl text-gray-500 font-bold dark:text-white">My Portfolio At A Glance</h4>
-        </div>
-        <div class="md:flex">
-            <div class="menu md:w-4/12 p-3 pr-0 md:pr-3 mx-auto ">
-                <p class="pb-9">I'm A Full stack developer who can design and develop an end-to-end application
-                    independently and also collaboratively by handling all the work of coding, databases, servers and
-                    platforms
-                    I love to be part of a team that builds products to change the world positively</p>
-                <ul class="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
-                    <li v-for="(category, index) in categories" @click="filter(category.id)"
-                        :class="{ selected: selectedCat === category }" class="w-full py-1">{{ category.name }}</li>
-
-                    <li @click="filter('all')" :class="{ selected: selectedCat === 'all' }" class="py-1">All Works</li>
-
-                </ul>
-            </div>
-
-
-            <div class="md:8/12">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div v-for="preview in filteredPreviews" :key="preview"
-                        :class="'preview ' + preview.cat"
-                        class="max-w-sm bg-white mx-auto  border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
-                        <a :href="preview.link">
-                            <img class="rounded-t-lg" :src="preview.img_link" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                    {{ preview.heading }}
-                                </h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{preview.shortDesc}}</p>
-                            <a href="#"
-                                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-dark  rounded-lg hover:bg-gray-900 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                {{preview.actionBtn}}
-                                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
-                        </div>
-
-                    </div>
-                    
-
-                </div>
-            </div>
-
-        </div>
+  <div class="my-works">
+    <!-- Filter bar -->
+    <div class="works-filter">
+      <button
+        v-for="f in filters"
+        :key="f.key"
+        class="filter-btn"
+        :class="{ active: activeFilter === f.key }"
+        @click="activeFilter = f.key"
+      >
+        {{ f.label }}
+      </button>
     </div>
 
+    <!-- Grid -->
+    <TransitionGroup name="cards" tag="div" class="works-grid">
+      <a
+        v-for="work in filtered"
+        :key="work.title"
+        :href="work.link"
+        target="_blank"
+        rel="noopener"
+        class="work-card"
+      >
+        <img :src="work.img" :alt="work.title" @error="$event.target.style.display = 'none'" />
+        <div class="work-card-body">
+          <div class="work-card-cat">{{ catLabels[work.cat] || work.cat }}</div>
+          <div class="work-card-title">{{ work.title }}</div>
+          <div class="work-card-desc">{{ work.desc }}</div>
+        </div>
+      </a>
+    </TransitionGroup>
 
+    <!-- Other projects -->
+    <div class="other-projects">
+      <p>
+        Other projects:
+        <a href="https://veohmo.com/" target="_blank">Veo HMO</a>,
+        <a href="https://myazabox.com/" target="_blank">Azabox Africa</a>,
+        <a href="https://github.com/DanielMabadeje/recruitment-app-group-12" target="_blank">Recruitment App</a>,
+        <a href="https://app.workforyou.ch/" target="_blank">WorkForYou</a>,
+        <a href="https://github.com/DanielMabadeje/Mvc-Framework" target="_blank">MVC Framework</a>,
+        SmileSwap, Halo, Rimplenet Plugin, Learnali
+      </p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-/* .preview {
-    height: 100px;
-    width: 1%;
-    opacity: 0;
-    animation: appear .5s ease-in-out forwards;
+.works-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
 }
 
-.cat1 {
-    background: gold;
+.filter-btn {
+  padding: 6px 16px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--sans);
 }
 
-.cat2 {
-    background: #333;
+.filter-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
 }
 
-.cat3 {
-    background: #ddd;
-} */
-
-
-button {
-    cursor: pointer;
-    margin: 5px 5px;
-    border: 0;
-    padding: 5px 10px;
-    background: #ddd;
-    border: 1px solid #ddd;
-    transition: .3s ease-in-out;
-    transition-property: background, border, color;
-
-    &.selected {
-        background: #fff;
-        color: #333;
-        border: 1px solid #333;
-    }
-
-    &:focus {
-        outline: none;
-    }
-
-    &:hover {
-        color: #fff;
-        background: #333;
-        border: 1px solid #333;
-    }
+.filter-btn.active {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
 }
 
-@keyframes appear {
-    to {
-        width: 100%;
-        opacity: 1;
-    }
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.work-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  display: block;
+}
+
+.work-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-strong);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.work-card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--border);
+  display: block;
+}
+
+.work-card-body {
+  padding: 16px 18px 20px;
+}
+
+.work-card-cat {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 6px;
+}
+
+.work-card-title {
+  font-weight: 500;
+  font-size: 15.5px;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.work-card-desc {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.other-projects {
+  margin-top: 28px;
+}
+
+.other-projects p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.other-projects a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.other-projects a:hover {
+  text-decoration: underline;
+}
+
+/* Card transition */
+.cards-enter-active,
+.cards-leave-active {
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+.cards-enter-from,
+.cards-leave-to {
+  opacity: 0;
+  transform: scale(0.97);
 }
 </style>
-
-<script>
-export default {
-
-    mounted() {
-        this.previews = this.randomizeArray(this.previews);
-    },
-    data() {
-        return {
-            categories: [
-                {
-                    id:             'cat1',
-                    name:          'Freelance',
-                },
-                {
-                    id:             'cat2',
-                    name:          'Work With Teams',
-                },
-                {
-                    id:             'cat3',
-                    name:          'Personal Projects',
-                },
-            ],
-            previews: [
-                {
-                    cat:        'cat2',
-                    link:       'https://lightningworkgroup.com/',
-                    img_link:   'https://media.licdn.com/dms/image/C4E05AQHAJIVWG2UvsA/videocover-low/0/1670403382604?e=2147483647&v=beta&t=7A03myHfZaQGFXmtFY9oqupn0RbY51P-P_8fNeeZI74',
-                    heading:    'Lightning WorkGroup',
-                    shortDesc:  'Lightning Workgroup is passionate about finding creative technical solutions to complex business problems.',
-                    actionBtn:  'See Details'
-                },
-                {
-                    cat:        'cat2',
-                    link:       'https://thecareerbuddy.com/',
-                    img_link:   'https://c76c7bbc41.mjedge.net/wp-content/uploads/tc/2023/03/Logo-21@4x-100-1024x709.jpg',
-                    heading:    'CareerBuddy HQ',
-                    shortDesc:  'CareerBuddy helps you hire & manage highly skilled talents across Africa for 80% less.',
-                    actionBtn:  'See Details'
-                },
-
-                {
-                    cat:        'cat2',
-                    link:       'http://hazontech.com/',
-                    img_link:   'https://hazonholdings.com/wp-content/uploads/2024/01/HAZON-HOLDINGS.png',
-                    heading:    'Hazon Technologies',
-                    shortDesc:  'Hazon Technologies is renowned as a front-runner in technology innovations that are rapidly changing lifestyle and business culture in Africa through its range of cutting-edge solutions deployed across different countries.',
-                    actionBtn:  'See Details'
-                },
-
-                {
-                    cat:        'cat2',
-                    link:       'https://gbefunwa.com/',
-                    img_link:   'https://media.licdn.com/dms/image/C4D1BAQGyL6f7iVZzZQ/company-background_10000/0/1632165354685/gbefunwa_cover?e=2147483647&v=beta&t=4vkKhBUbler-FKKNa4AtkPFnckIJoiDAer3Z6T7-88c',
-                    heading:    'Gbefunwa',
-                    shortDesc:  'Gbefunwa is a managed WordPress hosting company.',
-                    actionBtn:  'See Details'
-                },
-
-                {
-                    cat:        'cat2',
-                    link:       'https://xiela.online/',
-                    img_link:   'https://miro.medium.com/v2/resize:fit:1400/1*z7smcoXEOrrwFLx15RujVQ.png',
-                    heading:    'Xiela',
-                    shortDesc:  'Xiela is a management tool for smart schools',
-                    actionBtn:  'See Details'
-                },
-
-                {
-                    cat:        'cat2',
-                    link:       '#',
-                    img_link:   'https://cdn1.vc4a.com/media/2022/09/Middey-Logo-RGB-JPGFILES_Horizontal-Logo-Gold-Background-1024x512.jpg',
-                    heading:    'Middey Technologies',
-                    shortDesc:  'Middey is a Modern Era Payments, Payroll & Accounting Platform',
-                    actionBtn:  'See Details'
-                },
-
-                {
-                    cat:        'cat2',
-                    link:       'https://travellab.ng/',
-                    img_link:   'https://saspecialist.southafrica.net/cache/ce_img_cache/local/ac929c3064c92948/2317A4DC-8782-4DA9-AF87-F5F17C263972_566_197_s.png',
-                    heading:    'Travellab Ng',
-                    shortDesc:  "Travel Lab is an emerging online and offline travel agency that proffers travel solutions to today's businesses and leisure travellers.",
-                    actionBtn:  'See Details'
-                },
-
-                {
-                    cat:        'cat2',
-                    link:       'https://starthub.com.ng/',
-                    img_link:   'https://starthub.com.ng/wp-content/uploads/2021/01/starthubtech-e1656335867146.jpeg',
-                    heading:    'Start Innovation Hub',
-                    shortDesc:  'Start Innovation hub is an opportunity centre for technical talents and local businesses to leverage technology and start up faster.',
-                    actionBtn:  'See Details'
-                },
-                
-            ],
-            selectedCat: 'all',
-        }
-    },
-    computed: {
-        filteredPreviews() {
-            if (this.selectedCat === 'all') {
-                return this.previews;
-            } else {
-                return this.previews.filter(preview => preview.cat === this.selectedCat);
-            }
-        }
-    },
-    methods: {
-        filter(selection) {
-            this.selectedCat = selection;
-        },
-        randomizeArray(array) {
-            return array.sort(() => Math.random() - 0.5);
-        },
-
-    },
-}
-</script>
