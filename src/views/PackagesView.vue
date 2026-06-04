@@ -24,7 +24,7 @@ useFadeIn()
       >
         <div class="pkg-card-top">
           <div class="pkg-icon">{{ pkg.icon }}</div>
-          <span class="pkg-badge" :class="{ wip: pkg.status === 'wip' }">
+          <span :class="['pkg-badge', { wip: pkg.status === 'wip' }]">
             {{ pkg.status === 'wip' ? 'In Progress' : 'Published' }}
           </span>
         </div>
