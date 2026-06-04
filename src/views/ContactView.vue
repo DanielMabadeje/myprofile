@@ -5,7 +5,7 @@ useFadeIn()
 
 const socials = [
   { label: 'GitHub',       handle: 'DanielMabadeje',                     url: 'https://github.com/DanielMabadeje' },
-  { label: 'X / Twitter',  handle: '@DanielsMabadeje',                   url: 'https://twitter.com/DanielsMabadeje' },
+  { label: 'X / Twitter',  handle: '@mabadejedanphp',                   url: 'https://x.com/mabadejedanphp' },
   { label: 'LinkedIn',     handle: 'Daniel Mabadeje',                    url: 'https://www.linkedin.com/in/daniel-mabadeje-173b68169/' },
   { label: 'Medium',       handle: '@mabadejedaniel1',                   url: 'https://medium.com/@mabadejedaniel1' },
   { label: 'Community',    handle: 'PHPTalks Nigeria',                   url: 'https://phptalks.community/' },
