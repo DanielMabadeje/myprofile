@@ -79,6 +79,15 @@ export const packages = [
     tags: ['PHP 8', 'Blockchain', 'Packagist'],
     status: 'published',
   },
+
+  {
+    icon: '⛓',
+    name: 'danielmabadeje/php-solidity',
+    desc: 'Manually scaffolding the Service → DAO → Repository pattern for every model is repetitive and easy to get inconsistent across a team. This package generates the full stack (interface, repository, DAO, service, optional DTO) and wires up the container binding automatically, so the pattern stays consistent with zero boilerplate.',
+    link: 'https://packagist.org/packages/danielmabadeje/laravel-dao-generator',
+    tags: ['PHP 8', 'Daos', 'Packagist'],
+    status: 'published',
+  },
   // {
   //   icon: '🖥',
   //   name: 'Fermata — Virtual Studio',
@@ -105,7 +114,42 @@ export const packages = [
   // },
 ]
 
+export const projects = [
+  {
+    icon: '🏗',
+    name: 'Motf',
+    desc: 'A desktop application that enables producers to split audio files into clean parts',
+    link: 'https://getmotf.vercel.app/',
+    tags: ['Producer tool', 'Desktop App', 'NativePHP'],
+    status: 'published',
+  },
+]
+
 export const speakingEvents = [
+  {
+    date: 'September 28, 2025',
+    title: "AWS Uniuyo- ",
+    desc: 'Hosted the ',
+    link: 'https://x.com/PhpTalks/status/1971850336584503340/photo/1',
+    linkLabel: 'PHPTalks Socials',
+  },
+
+  {
+    date: 'September 28, 2025',
+    title: "PHPConnect 2025 - The Builder's Edition",
+    desc: "Hosted the Builder's edition of PHPConnect by PHPtalks",
+    link: 'https://x.com/PhpTalks/status/1971850336584503340/photo/1',
+    linkLabel: 'PHPTalks Socials',
+  },
+
+  {
+    date: 'April 27, 2025',
+    title: "PHPTalks - Modular Monolith Architecture With Laravel",
+    desc: 'Had a hands on session explaining the benefits of the Modular monolith architecture, also built an application in real time showing opinionated standards and also gotchas',
+    link: 'https://x.com/PhpTalks/status/1910431530197147972/photo/1',
+    linkLabel: 'PHPTalks Socials',
+  },
+
   {
     date: 'October 12, 2024',
     title: 'GDG On Campus (Tech Ignite) — Best Practices in Software Engineering',
@@ -113,6 +157,15 @@ export const speakingEvents = [
     link: null,
     linkLabel: null,
   },
+
+  {
+    date: 'September 28, 2024',
+    title: 'PHPConnect 2024 - Mastering The Craft',
+    desc: 'Hosted the 2024 edition of PHPConnect by PHPTalks ',
+    link: 'https://x.com/PhpTalks/status/1839903701638545613/photo/1',
+    linkLabel: 'PHPTalks Socials',
+  },
+
   {
     date: 'June 20, 2024',
     title: 'ACES Integrate — Finding Your Way in Tech (Breaking In)',

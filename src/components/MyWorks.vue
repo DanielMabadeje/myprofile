@@ -63,6 +63,7 @@ const filtered = computed(() =>
         <a href="https://github.com/DanielMabadeje/recruitment-app-group-12" target="_blank">Recruitment App</a>,
         <a href="https://app.workforyou.ch/" target="_blank">WorkForYou</a>,
         <a href="https://github.com/DanielMabadeje/Mvc-Framework" target="_blank">MVC Framework</a>,
+        <a href="https://getmotf.vercel.app/" target="_blank">Motf</a>,
         SmileSwap, Halo, Rimplenet Plugin, Learnali
       </p>
     </div>
