@@ -127,7 +127,7 @@ export const projects = [
 
 export const speakingEvents = [
   {
-    date: 'September 28, 2025',
+    date: 'May 23, 2026',
     title: "AWS Uniuyo - Student Community Day ",
     desc: 'Was part of the panel session at the AWS event talking about building for the real world, what works and what does not work',
     link: 'https://www.instagram.com/p/DYjkjBhso8k/',
