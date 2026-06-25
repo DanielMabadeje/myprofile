@@ -128,10 +128,10 @@ export const projects = [
 export const speakingEvents = [
   {
     date: 'September 28, 2025',
-    title: "AWS Uniuyo- ",
-    desc: 'Hosted the ',
-    link: 'https://x.com/PhpTalks/status/1971850336584503340/photo/1',
-    linkLabel: 'PHPTalks Socials',
+    title: "AWS Uniuyo - Student Community Day ",
+    desc: 'Was part of the panel session at the AWS event talking about building for the real world, what works and what does not work',
+    link: 'https://www.instagram.com/p/DYjkjBhso8k/',
+    linkLabel: null,
   },
 
   {
