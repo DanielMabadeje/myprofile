@@ -82,7 +82,7 @@ export const packages = [
 
   {
     icon: '⛓',
-    name: 'danielmabadeje/php-solidity',
+    name: 'danielmabadeje/laravel-dao-generator',
     desc: 'Manually scaffolding the Service → DAO → Repository pattern for every model is repetitive and easy to get inconsistent across a team. This package generates the full stack (interface, repository, DAO, service, optional DTO) and wires up the container binding automatically, so the pattern stays consistent with zero boilerplate.',
     link: 'https://packagist.org/packages/danielmabadeje/laravel-dao-generator',
     tags: ['PHP 8', 'Daos', 'Packagist'],
