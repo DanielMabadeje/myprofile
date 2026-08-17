@@ -73,6 +73,15 @@ export const catLabels = {
 export const packages = [
   {
     icon: '⛓',
+    name: 'Batchmail',
+    desc: "Send batch email through your own Gmail account, paced so you don't get throttled. Batchmail is a Chrome extension plus a small Laravel backend. There is no mail server and no third-party sending service — messages go out through the Gmail API using your own account, at your own sending reputation.",
+    link: 'https://github.com/DanielMabadeje/Batchmail',
+    tags: ['PHP 8', 'Batchmail', 'Chrome Extension'],
+    status: 'published',
+  },
+  
+  {
+    icon: '⛓',
     name: 'danielmabadeje/php-solidity',
     desc: 'A PHP-to-Solidity transpiler. Write EVM smart contracts using PHP 8 class syntax, custom attributes, AST nodes, and a CLI.',
     link: 'https://packagist.org/packages/danielmabadeje/php-solidity',
