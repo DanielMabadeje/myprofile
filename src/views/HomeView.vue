@@ -38,7 +38,7 @@ onMounted(() => {
       <a href="https://x.com/mabadejedanphp" target="_blank" rel="noopener">Twitter/X</a>
       <a href="https://www.linkedin.com/in/daniel-mabadeje-173b68169/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://medium.com/@mabadejedaniel1" target="_blank" rel="noopener">Medium</a>
-      <a href="https://phptalks.community/" target="_blank" rel="noopener">PHPTalks</a>
+      <a href="https://phptalks.org/" target="_blank" rel="noopener">PHPTalks</a>
     </div>
   </section>
 </template>
