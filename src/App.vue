@@ -74,7 +74,7 @@ watch(() => route.path, closeMobile)
   <footer>
     <span class="footer-copy">© {{ new Date().getFullYear() }} Daniel Mabadeje</span>
     <div class="footer-links">
-      <a href="https://phptalks.community/" target="_blank" rel="noopener">PHPTalks Community</a>
+      <a href="https://phptalks.org/" target="_blank" rel="noopener">PHPTalks Community</a>
       <a href="https://github.com/DanielMabadeje" target="_blank" rel="noopener">GitHub</a>
       <a href="mailto:mabadejedaniel1@gmail.com">Email</a>
     </div>
