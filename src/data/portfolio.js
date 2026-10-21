@@ -137,7 +137,7 @@ export const projects = [
 export const speakingEvents = [
   {
     date: 'Oct 3, 2026',
-    title: "PHPConnec 2026 (Livestream) - AI and the Engineer ",
+    title: "PHPConnect 2026 (Livestream) - AI and the Engineer ",
     desc: "Hosted our first PHPConnect Online global conferance tagged AI and the engineer",
     link: 'https://www.youtube.com/watch?v=-OwKO_-bHEc&t=12259s',
     linkLabel: "Watch live on Youtube",
