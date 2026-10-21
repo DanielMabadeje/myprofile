@@ -27,16 +27,16 @@ export const works = [
     title: 'Gbefunwa',
     desc: 'Managed WordPress hosting company.',
   },
+  // {
+  //   cat: 'team',
+  //   link: 'https://xiela.online/',
+  //   img: 'https://miro.medium.com/v2/resize:fit:1400/1*z7smcoXEOrrwFLx15RujVQ.png',
+  //   title: 'Xiela',
+  //   desc: 'A management tool for smart schools.',
+  // },
   {
     cat: 'team',
-    link: 'https://xiela.online/',
-    img: 'https://miro.medium.com/v2/resize:fit:1400/1*z7smcoXEOrrwFLx15RujVQ.png',
-    title: 'Xiela',
-    desc: 'A management tool for smart schools.',
-  },
-  {
-    cat: 'team',
-    link: '#',
+    link: 'https://middey.com/',
     img: 'https://cdn1.vc4a.com/media/2022/09/Middey-Logo-RGB-JPGFILES_Horizontal-Logo-Gold-Background-1024x512.jpg',
     title: 'Middey Technologies',
     desc: 'Modern era payments, payroll & accounting platform.',
@@ -136,11 +136,19 @@ export const projects = [
 
 export const speakingEvents = [
   {
+    date: 'Oct 3, 2026',
+    title: "AWS Uniuyo - Student Community Day ",
+    desc: "Hosted our first PHPConnect Online global conferance tagged AI and the engineer",
+    link: 'https://www.youtube.com/watch?v=-OwKO_-bHEc&t=12259s',
+    linkLabel: "Watch live on Youtube",
+  },
+  
+  {
     date: 'May 23, 2026',
     title: "AWS Uniuyo - Student Community Day ",
     desc: 'Was part of the panel session at the AWS event talking about building for the real world, what works and what does not work',
     link: 'https://www.instagram.com/p/DYjkjBhso8k/',
-    linkLabel: null,
+    linkLabel: "view Post",
   },
 
   {
