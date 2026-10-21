@@ -24,7 +24,7 @@ onMounted(() => {
     <p class="hero-sub">
       I build products that solve real problems — across fintech, healthcare, mobile,
       and the open web. Co-founder of
-      <a href="https://phptalks.community/" target="_blank" rel="noopener">PHPTalks Nigeria</a>,
+      <a href="https://phptalks.org/" target="_blank" rel="noopener">PHPTalks Nigeria</a>,
       a community of 1,400+ PHP developers.
     </p>
 
